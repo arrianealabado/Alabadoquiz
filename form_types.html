@@ -34,14 +34,22 @@
                 <div style="margin-bottom: 2rem;">A client is requesting to add a 6 digit numeric pin field to form. Write the correct form output for this case.</div>
 
                     <!--ANSWER HERE-->
-                    
+                    <form action="pin_action.php" method="POST">
+                        <label for="pin">Enter 6-digit PIN:</label>
+                        <input type="number" id="pin" name="pin" min="100000" max="999999" required>
+                        <input type="submit" value="Submit PIN">
+                    </form>
                     <!--END ANSWER HERE-->
 
                 <li style="margin-bottom: 0.5rem;"><strong>SCENARIO: 2</strong></li>
                 <div style="margin-bottom: 2rem;">An dental appointment form requires a selection of date that only limits from today's date(Sept 16, 2024) up to Sept 22, 2024</div>
 
                     <!--ANSWER HERE-->
-                    
+                    <form action="appointment_action.php" method="POST">
+                        <label for="appointment-date">Select Appointment Date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" min="2024-09-16" max="2024-09-22" required>
+                        <input type="submit" value="Submit Appointment">
+                    </form>
                     <!--END ANSWER HERE-->
 
                     
@@ -50,7 +58,11 @@
                 <div style="margin-bottom: 2rem;">A webvisitor wanted to subscribe to a newsletter using his/her email. Write the necessary input form for this case.</div>
 
                     <!--ANSWER HERE-->
-                    
+                    <form action="subscribe_action.php" method="POST">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="submit" value="Subscribe">
+                    </form>
                     <!--END ANSWER HERE-->  
             </ol>
         </div>    
